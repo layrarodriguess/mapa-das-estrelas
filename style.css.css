@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f1a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+/* HORAS */
+.galeria-horas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria-horas img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ARQUÉTIPOS */
+.galeria-arquetipos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.galeria-arquetipos img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+/* LAYOUT */
+.layout-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.layout-imagens img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+
+/* TABELA */
+.horas-iguais-container {
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, #0b132b, #000814);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.horas-iguais-container h2 {
+  color: #e0f2ff;
+  margin-bottom: 30px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.horas-tabela {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.horas-tabela td {
+  border: 1px solid rgba(144, 224, 239, 0.2);
+  padding: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.horas-tabela a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #90e0ef;
+  font-size: 18px;
+  display: block;
+}
+
+.horas-tabela td:hover {
+  background-color: rgba(0, 180, 216, 0.15);
+  box-shadow: inset 0 0 10px rgba(0, 180, 216, 0.4);
+}
+
+.horas-tabela a:hover {
+  color: #00b4d8;
+}
+
+.horas-tabela td {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.horas-tabela {
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.1);
+}
+@media (max-width: 768px) {
+
+  .horas-tabela tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .horas-tabela td {
+    padding: 16px;
+  }
+
+}
